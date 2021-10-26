@@ -11,14 +11,13 @@ button.addEventListener('click', () => {
     const Round = inputTxt2.value;
   
     // .then(data =>
-    //Now Fetch Through Get API 
+   
     fetch(`http://ergast.com/api/f1/${Season}/${Round}.json`)
         .then(res => res.json())
         .then(data => {
           
             inputTxt.value = " ";
 
-            //Now Show All Data Value
             showData.innerHTML = `
                                         <table class="table">
                                         <thead>
